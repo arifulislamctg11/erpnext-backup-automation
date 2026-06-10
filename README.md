@@ -31,3 +31,37 @@ Pre-commit is configured to use the following tools for checking and formatting 
 ### License
 
 mit
+
+### This structure works well for your planned features:
+
+- ERPNext backup creation
+- Google Drive upload (rclone)
+- OneDrive upload (rclone)
+- Local Windows PC sync
+- Backup schedules
+- Backup logs
+- Dashboard and monitoring UI
+- Email notifications for failed backups
+
+
+
+
+
+
+erpnext_backup_automation/
+├── backup_manager/
+├── cloud_storage/
+│   ├── google_drive.py
+│   ├── onedrive.py
+│   └── local_sync.py
+├── doctype/
+│   ├── backup_profile/
+│   ├── backup_job/
+│   └── backup_log/
+├── page/
+│   └── backup_dashboard/
+├── public/
+├── hooks.py
+└── scheduler_events
+
+

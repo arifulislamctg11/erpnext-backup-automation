@@ -1,0 +1,19 @@
+{
+ "content": null,
+ "creation": "2026-06-10 02:44:39.777304",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2026-06-10 02:44:39.777304",
+ "modified_by": "Administrator",
+ "module": "Erpnext Backup Automation",
+ "name": "backup-dashboard",
+ "owner": "Administrator",
+ "page_name": "backup-dashboard",
+ "roles": [],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Backup Dashboard"
+}
