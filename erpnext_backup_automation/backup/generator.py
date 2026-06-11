@@ -4,7 +4,7 @@ import os
 import shutil
 import time
 import re
-from erpnext_backup_manager.utils.logger import log_backup
+from erpnext_backup_automation.utils.logger import log_backup
 
 
 EXPECTED_SUFFIXES = [
@@ -96,6 +96,7 @@ def create_backup():
 
         # 6. Log success
         log_backup(
+            time_stamp=latest_timestamp,
             file_name=folder_name,
             file_path=dest_folder,
             status="Success",
