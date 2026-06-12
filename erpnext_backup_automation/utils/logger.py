@@ -1,7 +1,8 @@
 import frappe
 from datetime import datetime
+from erpnext_backup_automation.utils.formatter import get_readable_size
 
-def log_backup(file_name, file_path, status, error_message=None, time_stamp=None):
+def log_backup(file_name, file_path, status, error_message=None, time_stamp=None, file_size=0):
     doc = frappe.get_doc({
         "doctype": "Backup Log",
         "backup_file": file_name,
@@ -9,7 +10,9 @@ def log_backup(file_name, file_path, status, error_message=None, time_stamp=None
         "status": status,
         "error_message": error_message,
         "time_stamp":datetime.now(),
-        "site": frappe.local.site
+        "site": frappe.local.site,
+        "file_size": file_size,
+        "file_size_readable": get_readable_size(file_size)
     })
 
     doc.insert(ignore_permissions=True)

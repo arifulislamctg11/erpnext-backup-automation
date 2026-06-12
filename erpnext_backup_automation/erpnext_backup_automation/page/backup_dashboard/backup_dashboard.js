@@ -124,7 +124,7 @@ function load_dashboard_data(page) {
 				var d = r.message;
 				$('#last-backup').text(d.last_backup_time || '--');
 				$('#total-backups').text(d.total_backups || 0);
-				$('#total-size').text((d.total_size_mb || 0).toFixed(1) + ' MB');
+				$('#total-size').text((d.total_backup_size_mb || 0).toFixed(1) + ' MB');
 				$('#failed-backups').text(d.failed_backups || 0);
 				update_cloud_badge('onedrive-status', d.onedrive_status);
 				update_cloud_badge('gdrive-status', d.gdrive_status);

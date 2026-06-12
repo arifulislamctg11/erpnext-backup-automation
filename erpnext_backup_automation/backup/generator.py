@@ -101,6 +101,7 @@ def create_backup():
             file_path=dest_folder,
             status="Success",
             error_message=None,
+            file_size=sum(os.path.getsize(os.path.join(dest_folder, f)) for f in copied_files)
         )
 
         return dest_folder

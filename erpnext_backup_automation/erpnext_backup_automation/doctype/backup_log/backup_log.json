@@ -16,7 +16,9 @@
   "error_message",
   "amended_from",
   "file_path",
-  "site_name"
+  "site_name",
+  "file_size",
+  "file_size_readable"
  ],
  "fields": [
   {
@@ -87,12 +89,23 @@
    "in_list_view": 1,
    "label": "Error",
    "read_only": 1
+  },
+  {
+   "fieldname": "file_size",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "FileSize"
+  },
+  {
+   "fieldname": "file_size_readable",
+   "fieldtype": "Data",
+   "label": "File Size"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-12 12:21:52.587369",
+ "modified": "2026-06-12 22:02:57.202653",
  "modified_by": "Administrator",
  "module": "Erpnext Backup Automation",
  "name": "Backup Log",

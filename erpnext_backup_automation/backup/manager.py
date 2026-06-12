@@ -20,9 +20,7 @@ PROVIDERS = {
 @frappe.whitelist()
 def run_backup():
     backup_file = create_backup()
-
     settings_name = frappe.db.get_value("Backup Settings", {}, "name")
-
     if not settings_name:
         frappe.throw("Backup Settings not found")
 

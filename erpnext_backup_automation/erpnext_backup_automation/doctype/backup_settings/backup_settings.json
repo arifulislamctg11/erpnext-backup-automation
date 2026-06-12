@@ -8,7 +8,9 @@
  "engine": "InnoDB",
  "field_order": [
   "detail_section",
-  "backup_destinations"
+  "backup_destinations",
+  "backup_frequency",
+  "schedule_time"
  ],
  "fields": [
   {
@@ -21,12 +23,23 @@
    "fieldtype": "Table",
    "label": "Backup Destinations",
    "options": "Backup Destination"
+  },
+  {
+   "fieldname": "schedule_time",
+   "fieldtype": "Time",
+   "label": "Schedule Time "
+  },
+  {
+   "fieldname": "backup_frequency",
+   "fieldtype": "Select",
+   "label": "Backup Frequency",
+   "options": "Daily\nWeekly\nMonthly"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-11 01:15:48.421336",
+ "modified": "2026-06-13 03:16:18.794288",
  "modified_by": "Administrator",
  "module": "Erpnext Backup Automation",
  "name": "Backup Settings",

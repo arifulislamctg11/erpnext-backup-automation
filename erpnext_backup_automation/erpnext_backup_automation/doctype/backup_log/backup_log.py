@@ -3,6 +3,7 @@
 
 # import frappe
 from frappe.model.document import Document
+from erpnext_backup_automation.utils.formatter import get_readable_size
 
 
 class BackupLog(Document):

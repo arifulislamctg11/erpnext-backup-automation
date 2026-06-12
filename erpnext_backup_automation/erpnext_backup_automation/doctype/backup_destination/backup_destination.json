@@ -34,22 +34,24 @@
   {
    "fieldname": "configuration",
    "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
    "label": "Configuration",
-   "options": "Success\nFailed",
-   "read_only": 1
+   "options": "Configured\nNot Configured"
   },
   {
    "fieldname": "error_message",
    "fieldtype": "Text",
-   "label": "Error_message",
-   "read_only": 1
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Error_message"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-06-12 11:11:54.471761",
+ "modified": "2026-06-13 02:50:08.915155",
  "modified_by": "Administrator",
  "module": "Erpnext Backup Automation",
  "name": "Backup Destination",
