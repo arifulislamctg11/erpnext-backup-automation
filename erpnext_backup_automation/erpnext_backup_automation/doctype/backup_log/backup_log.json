@@ -30,28 +30,28 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Status",
-   "options": "Success\nFailed"
+   "options": "\nSuccess\nFailed"
   },
   {
    "fieldname": "google_drive_status",
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Google Drive Status",
-   "options": "Success\nFailed"
+   "options": "\nSuccess\nFailed"
   },
   {
    "fieldname": "one_drive_status",
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "One Drive Status",
-   "options": "Success\nFailed"
+   "options": "\nSuccess\nFailed"
   },
   {
    "fieldname": "local_computer_status",
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Local Computer Status",
-   "options": "Success\nFailed"
+   "options": "\nSuccess\nFailed"
   },
   {
    "fieldname": "time_stamp",
@@ -92,7 +92,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-11 16:54:04.247300",
+ "modified": "2026-06-12 12:21:52.587369",
  "modified_by": "Administrator",
  "module": "Erpnext Backup Automation",
  "name": "Backup Log",
